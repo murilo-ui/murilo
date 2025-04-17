@@ -1,25 +1,129 @@
-<html>
-    <head>
-        <title>minha pagina pessoal</title>
-    </head>
-    <style>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Página Pessoal</title>
 
+    <!-- Google Fonts - Padrão brabo -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(to right, #c2e9fb, #a1c4fd);
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #00c9ff, #92fe9d);
+            color: white;
+            padding: 50px 20px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            font-size: 1.2em;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+
+        section {
+            background: white;
+            padding: 25px;
+            margin-bottom: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease;
+        }
+
+        section:hover {
+            transform: scale(1.02);
+        }
+
+        h2 {
+            color: #8e44ad;
+            margin-bottom: 15px;
+            font-size: 1.8em;
+            border-bottom: 2px solid #8e44ad;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            section {
+                padding: 15px;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+
+            li {
+                font-size: 1em;
+            }
+        }
     </style>
-    <body>
-        <header>
-            <h1>bem-vindo á minha pagina!</h1>
-            <p>estudante de programação</p>
-        </header>
-        <main>
-            <section>
-                <h2>minhas habilidades</h2>
-                <ul>
-                    <li>logica de programação</li>
-                    <li>HTML e CSS</li>
-                    <li>trabalhos em equipe</li>
-                    <li>Redes e IOT</li>
-                </ul>
-            </section>
-        </main>
-    </body>
+</head>
+<body>
+    <header>
+        <h1>Bem-vindo à minha página!</h1>
+        <p>Sou um estudante de programação mandando ver no código 😎</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Minhas Habilidades</h2>
+            <ul>
+                <li>Lógica de Programação</li>
+                <li>HTML e CSS</li>
+                <li>Trabalho em Equipe</li>
+                <li>Redes e IoT</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Cursos</h2>
+            <ul>
+                <li>Curso de Introdução à Programação</li>
+                <li>Curso de HTML e CSS Básico</li>
+                <li>Curso de Arduino</li>
+            </ul>
+        </section>
+    </main>
+</body>
 </html>
+
